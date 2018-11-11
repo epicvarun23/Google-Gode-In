@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="32dp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+<LinearLayout
+    android:layout_marginTop="15sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="35sp"
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+
+  />
+<LinearLayout
+    android:layout_marginLeft="15sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/addText"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:text="+"
+        android:onClick="add"
+
+ />
+
+    <TextView
+        android:id="@+id/Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+
+        />
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:text="-"
+        android:onClick="sub"
+
+    />
+
+</LinearLayout>
+
+    <Button
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="35sp"
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:onClick="Thanks"
+        />
+
+    <TextView
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="35sp"
+        android:id="@+id/FinalText"
+        android:layout_width="224dp"
+        android:layout_height="148dp"
+        android:text="TextView"
+        android:textSize="16sp"
+ />
+
+
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
